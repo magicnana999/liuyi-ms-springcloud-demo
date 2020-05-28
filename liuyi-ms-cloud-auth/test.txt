@@ -1,0 +1,10 @@
+curl -X GET http://127.0.0.1:31010/liuyi/auth/test/error/param_require
+curl -X GET http://127.0.0.1:31010/liuyi/auth/test/error/param_require -H "X-Liuyi-App-Key:12123" -H "X-Liuyi-Platform-Key:231232"
+curl -X GET http://127.0.0.1:31010/liuyi/auth/test/error/param_require -H "X-Liuyi-App-Key:12123" -H "X-Liuyi-Platform-Key:231232" -D "token=sdfsdf"
+curl -X GET http://127.0.0.1:31010/liuyi/auth/test/error/param_require\?token\=dfss -H "X-Liuyi-App-Key:12123" -H "X-Liuyi-Platform-Key:231232" -D "token=sdfsdf"
+
+curl -X POST http://127.0.0.1:31010/liuyi/auth/test/error/method_allow\?token\=dfss -H "X-Liuyi-App-Key:12123" -H "X-Liuyi-Platform-Key:231232"
+
+
+curl -X GET http://127.0.0.1:31010/liuyi/auth/test/error/custom_msg\?token\=dfss -H "X-Liuyi-App-Key:12123" -H "X-Liuyi-Platform-Key:231232"
+
